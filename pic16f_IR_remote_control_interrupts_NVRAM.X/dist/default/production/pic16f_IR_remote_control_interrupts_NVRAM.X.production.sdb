@@ -1,0 +1,475 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F876A ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"472 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"33 C:\Users\daniele\MPLABXProjects\pic16f_IR_remote_control_interrupts_NVRAM.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"112
+[v _setup_peripheals setup_peripheals `(v  1 e 1 0 ]
+"167
+[v _putch putch `(v  1 e 1 0 ]
+"174
+[v _read_char read_char `(uc  1 e 1 0 ]
+"185
+[v _read_line read_line `(v  1 e 1 0 ]
+"211
+[v _RAM_set_SPI_mode RAM_set_SPI_mode `(v  1 e 1 0 ]
+"222
+[v _RAM_sequential_SPI_write RAM_sequential_SPI_write `(v  1 e 1 0 ]
+[v i1_RAM_sequential_SPI_write RAM_sequential_SPI_write `(v  1 e 1 0 ]
+"254
+[v _RAM_sequential_SPI_read RAM_sequential_SPI_read `(v  1 e 1 0 ]
+[v i1_RAM_sequential_SPI_read RAM_sequential_SPI_read `(v  1 e 1 0 ]
+"285
+[v _ISR ISR `II(v  1 e 1 0 ]
+"166 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f876a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S59 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"181
+[u S66 . 1 `S59 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES66  1 e 1 @5 ]
+[s S167 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES176  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S31 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S40 . 1 `S31 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES40  1 e 1 @7 ]
+[s S81 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"383
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S95 . 1 `S81 1 . 1 0 `S90 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES95  1 e 1 @11 ]
+[s S113 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"454
+[u S121 . 1 `S113 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES121  1 e 1 @12 ]
+"534
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+[s S132 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+"580
+[s S138 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S144 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[u S147 . 1 `S132 1 . 1 0 `S138 1 . 1 0 `S144 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES147  1 e 1 @16 ]
+"708
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S456 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"735
+[s S462 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S467 . 1 `S456 1 . 1 0 `S462 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES467  1 e 1 @20 ]
+[s S303 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"894
+[s S312 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S316 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S319 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S322 . 1 `S303 1 . 1 0 `S312 1 . 1 0 `S316 1 . 1 0 `S319 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES322  1 e 1 @24 ]
+"959
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"966
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1225
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1275
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1337
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S245 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1354
+[u S254 . 1 `S245 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES254  1 e 1 @135 ]
+[s S348 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1415
+[u S356 . 1 `S348 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES356  1 e 1 @140 ]
+[s S367 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1659
+[s S376 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S381 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S387 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S392 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S397 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S402 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S407 . 1 `S367 1 . 1 0 `S376 1 . 1 0 `S381 1 . 1 0 `S387 1 . 1 0 `S392 1 . 1 0 `S397 1 . 1 0 `S402 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES407  1 e 1 @148 ]
+[s S266 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1800
+[s S275 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S279 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S282 . 1 `S266 1 . 1 0 `S275 1 . 1 0 `S279 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES282  1 e 1 @152 ]
+"1855
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+[s S218 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2023
+[s S223 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S228 . 1 `S218 1 . 1 0 `S223 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES228  1 e 1 @159 ]
+"358 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"28 C:\Users\daniele\MPLABXProjects\pic16f_IR_remote_control_interrupts_NVRAM.X\main.c
+[v _c c `uc  1 e 1 0 ]
+[v _number number `[10]uc  1 e 10 0 ]
+"29
+[v _i i `um  1 e 3 0 ]
+[v _e e `um  1 e 3 0 ]
+[v _a a `um  1 e 3 0 ]
+[v _b b `um  1 e 3 0 ]
+[v _cycles cycles `um  1 e 3 0 ]
+"30
+[v _tvalue tvalue `ui  1 e 2 0 ]
+"31
+[v _bvalue bvalue `uc  1 e 1 0 ]
+"33
+[v _main main `(v  1 e 1 0 ]
+{
+"110
+} 0
+"112
+[v _setup_peripheals setup_peripheals `(v  1 e 1 0 ]
+{
+"165
+} 0
+"185
+[v _read_line read_line `(v  1 e 1 0 ]
+{
+[v read_line@s s `*.4uc  1 a 1 wreg ]
+"188
+[v read_line@c c `uc  1 a 1 15 ]
+"186
+[v read_line@i i `i  1 a 2 13 ]
+"185
+[v read_line@s s `*.4uc  1 a 1 wreg ]
+[v read_line@max_len max_len `i  1 p 2 8 ]
+[v read_line@s s `*.4uc  1 a 1 12 ]
+"209
+} 0
+"174
+[v _read_char read_char `(uc  1 e 1 0 ]
+{
+"183
+} 0
+"472 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"509
+[v printf@width width `i  1 a 2 41 ]
+"541
+[v printf@len len `ui  1 a 2 39 ]
+"540
+[v printf@val val `ui  1 a 2 35 ]
+"507
+[v printf@c c `uc  1 a 1 43 ]
+"474
+[v printf@ap ap `[1]*.4v  1 a 1 38 ]
+"516
+[v printf@prec prec `c  1 a 1 37 ]
+"542
+[v printf@cp cp `*.4DCuc  1 a 1 34 ]
+"520
+[v printf@flag flag `uc  1 a 1 33 ]
+"472
+[v printf@f f `*.25DCuc  1 p 2 21 ]
+"1560
+} 0
+"167 C:\Users\daniele\MPLABXProjects\pic16f_IR_remote_control_interrupts_NVRAM.X\main.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 7 ]
+"172
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 20 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 15 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 17 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 12 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 14 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 7 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 9 ]
+"30
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v atoi@a a `i  1 a 2 18 ]
+"8
+[v atoi@sign sign `uc  1 a 1 17 ]
+"5
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+[v atoi@s s `*.4DCuc  1 a 1 20 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 8 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 11 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 7 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 9 ]
+"53
+} 0
+"211 C:\Users\daniele\MPLABXProjects\pic16f_IR_remote_control_interrupts_NVRAM.X\main.c
+[v _RAM_set_SPI_mode RAM_set_SPI_mode `(v  1 e 1 0 ]
+{
+"212
+[v RAM_set_SPI_mode@dummy dummy `uc  1 a 1 12 ]
+"211
+[v RAM_set_SPI_mode@latch latch `*.39VEuc  1 p 2 7 ]
+[v RAM_set_SPI_mode@pin_number pin_number `uc  1 p 1 9 ]
+"220
+} 0
+"222
+[v _RAM_sequential_SPI_write RAM_sequential_SPI_write `(v  1 e 1 0 ]
+{
+"223
+[v RAM_sequential_SPI_write@i i `uc  1 a 1 20 ]
+[v RAM_sequential_SPI_write@dummy dummy `uc  1 a 1 19 ]
+"222
+[v RAM_sequential_SPI_write@latch latch `*.39VEuc  1 p 2 7 ]
+[v RAM_sequential_SPI_write@pin_number pin_number `uc  1 p 1 9 ]
+[v RAM_sequential_SPI_write@address address `um  1 p 3 10 ]
+[v RAM_sequential_SPI_write@data_out data_out `*.39uc  1 p 2 13 ]
+[v RAM_sequential_SPI_write@data_out_size data_out_size `uc  1 p 1 15 ]
+"252
+} 0
+"254
+[v _RAM_sequential_SPI_read RAM_sequential_SPI_read `(v  1 e 1 0 ]
+{
+"255
+[v RAM_sequential_SPI_read@i i `uc  1 a 1 20 ]
+[v RAM_sequential_SPI_read@dummy dummy `uc  1 a 1 19 ]
+"254
+[v RAM_sequential_SPI_read@latch latch `*.39VEuc  1 p 2 7 ]
+[v RAM_sequential_SPI_read@pin_number pin_number `uc  1 p 1 9 ]
+[v RAM_sequential_SPI_read@address address `um  1 p 3 10 ]
+[v RAM_sequential_SPI_read@data_in data_in `*.39uc  1 p 2 13 ]
+[v RAM_sequential_SPI_read@data_in_size data_in_size `uc  1 p 1 15 ]
+"283
+} 0
+"285
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"316
+} 0
+"222
+[v i1_RAM_sequential_SPI_write RAM_sequential_SPI_write `(v  1 e 1 0 ]
+{
+[v i1RAM_sequential_SPI_write@i RAM_sequential_SPI_write `uc  1 a 1 13 ]
+[v i1RAM_sequential_SPI_write@dummy RAM_sequential_SPI_write `uc  1 a 1 12 ]
+[v i1RAM_sequential_SPI_write@latch latch `*.39VEuc  1 p 2 0 ]
+[v i1RAM_sequential_SPI_write@pin_number pin_number `uc  1 p 1 2 ]
+[v i1RAM_sequential_SPI_write@address address `um  1 p 3 3 ]
+[v i1RAM_sequential_SPI_write@data_out data_out `*.39uc  1 p 2 6 ]
+[v i1RAM_sequential_SPI_write@data_out_size data_out_size `uc  1 p 1 8 ]
+"252
+} 0
+"254
+[v i1_RAM_sequential_SPI_read RAM_sequential_SPI_read `(v  1 e 1 0 ]
+{
+[v i1RAM_sequential_SPI_read@i RAM_sequential_SPI_read `uc  1 a 1 13 ]
+[v i1RAM_sequential_SPI_read@dummy RAM_sequential_SPI_read `uc  1 a 1 12 ]
+[v i1RAM_sequential_SPI_read@latch latch `*.39VEuc  1 p 2 0 ]
+[v i1RAM_sequential_SPI_read@pin_number pin_number `uc  1 p 1 2 ]
+[v i1RAM_sequential_SPI_read@address address `um  1 p 3 3 ]
+[v i1RAM_sequential_SPI_read@data_in data_in `*.39uc  1 p 2 6 ]
+[v i1RAM_sequential_SPI_read@data_in_size data_in_size `uc  1 p 1 8 ]
+"283
+} 0
