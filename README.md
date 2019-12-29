@@ -1,4 +1,9 @@
-# Documentation and description of the project
+# PIC16F876A based BUS sniffer
+
+![Logic diagram](https://github.com/DanCasterIt/bus-sniffer/blob/master/images/logic_diagram.png)
+![Circuit diagram](https://github.com/DanCasterIt/bus-sniffer/blob/master/images/circuit_diagram.png)
+
+## Documentation and description of the project
 in wiki.pdf or wiki.docx. They refer to the project in the folder pic16f_IR_remote_control_interrupts_NVRAM.X.
 This project uses interrupts and 23LCV1024 NVRAMs.
 
